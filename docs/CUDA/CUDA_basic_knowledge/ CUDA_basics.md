@@ -8,3 +8,5 @@ In Turing, each Tensor Core can perform up to 64 floating point fused multiply-a
 CUDA C++ makes Tensor Cores available via the Warp-Level Matrix Operations (WMMA) API. At the CUDA level, the warp-level interface addresses 16×16, 32×8 and 8×32 size matrices by spanning all 32 threads of the warp.
 
 ![alt text](image.png)
+
+## [CUDA and Pytorch](https://pytorch.org/docs/stable/notes/cuda.html)
