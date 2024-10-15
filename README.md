@@ -19,6 +19,7 @@ Topics:
 | Paper | Conference & Year |
 |-------|-------------------|
 |[CUDA basic knowledge](./docs/CUDA/CUDA_basic_knowledge/%20CUDA_basics.md)||
+|[Mirage: A Multi-Level Superoptimizer for Tensor Programs <br>(Generating Fast GPU Kernels without Programming in CUDA/Triton)](./docs/CUDA/Mirage/Mirage.md)|Arxiv, 2024|
 
 ## NNFusion
 | Paper | Conference & Year |

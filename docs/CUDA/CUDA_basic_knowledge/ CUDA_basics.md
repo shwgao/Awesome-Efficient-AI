@@ -16,3 +16,8 @@ CUDA C++ makes Tensor Cores available via the Warp-Level Matrix Operations (WMMA
 ## Memory Management
 
 The default cuBLAS workspace size for sm<90 uses **8.125MB** and is initialized: [see ref.](https://discuss.pytorch.org/t/help-with-cuda-memory-allocation-during-forward-linear/190797)
+
+[Pytorch memory management](https://pytorch.org/docs/stable/notes/cuda.html#memory-management):
+
+- PyTorch uses a *caching memory allocator* to speed up memory allocations. This allows fast memory deallocation without device synchronizations.
+-
