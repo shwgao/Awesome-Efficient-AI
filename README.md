@@ -30,3 +30,12 @@ Topics:
 |-------|-------------------|
 |[SELF-ATTENTION DOES NOT NEED $O(n^{2})$ MEMORY](./docs/Efficient%20AI%20Algorithems/efficient-attention-memory.md)|arXiv, 2021|
 |[G10: Enabling An Efficient Unified GPU Memory and Storage Architecture with Smart Tensor Migrations](./docs/Efficient%20AI%20Algorithems/G10/G10.md)|MICRO, 2023|
+
+## Memory Management
+| Paper | Conference & Year |
+|-------|-------------------|
+|[Dapple:A pipelined data parallel approach for training large models.](.)|PPoPP, 2021|
+|[Zero-offload: Democratizing billion-scale modeltraining](.)|USENIX, 2021|
+|[Memory-efficient pipeline-parallel dnn training](.)|PMLR, 2021|
+|[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
+|[Gpipe: Efficient training of giant neural networks using pipeline parallelism](.)|NeurIPS, 2019|
