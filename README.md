@@ -28,12 +28,14 @@ Topics:
 ## Efficient AI Algorithms
 | Paper | Conference & Year |
 |-------|-------------------|
-|[SELF-ATTENTION DOES NOT NEED $O(n^{2})$ MEMORY](./docs/Efficient%20AI%20Algorithems/efficient-attention-memory.md)|arXiv, 2021|
 |[G10: Enabling An Efficient Unified GPU Memory and Storage Architecture with Smart Tensor Migrations](./docs/Efficient%20AI%20Algorithems/G10/G10.md)|MICRO, 2023|
+|[SELF-ATTENTION DOES NOT NEED $O(n^{2})$ MEMORY](./docs/Efficient%20AI%20Algorithems/efficient-attention-memory.md)|arXiv, 2021|
+|[Enable Simultaneous DNN Services Based on Deterministic Operator Overlap and Precise Latency Prediction](.)|SC, 2021|
 
 ## Memory Management
 | Paper | Conference & Year |
 |-------|-------------------|
+|[Efficient Memory Management for Large Language Model Serving with PagedAttention](.)|SOSP, 2023|
 |[Dapple:A pipelined data parallel approach for training large models.](.)|PPoPP, 2021|
 |[Zero-offload: Democratizing billion-scale modeltraining](.)|USENIX, 2021|
 |[Memory-efficient pipeline-parallel dnn training](.)|PMLR, 2021|
