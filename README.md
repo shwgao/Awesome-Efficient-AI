@@ -40,4 +40,5 @@ Topics:
 |[Zero-offload: Democratizing billion-scale modeltraining](.)|USENIX, 2021|
 |[Memory-efficient pipeline-parallel dnn training](.)|PMLR, 2021|
 |[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
+|[Efficient Memory Management for Deep Neural Net Inference](.)| arXiv, 2020|
 |[Gpipe: Efficient training of giant neural networks using pipeline parallelism](.)|NeurIPS, 2019|
