@@ -35,6 +35,8 @@ Topics:
 ## Memory Management
 | Paper | Conference & Year |
 |-------|-------------------|
+|[MODeL: Memory Optimizations for Deep Learning](.)|ICML, 2023|
+|[ROAM: memory-efficient large DNN training via optimized operator ordering and memory layout](.)|arXiv, 2023|
 |[Efficient Memory Management for Large Language Model Serving with PagedAttention](.)|SOSP, 2023|
 |[Dapple:A pipelined data parallel approach for training large models.](.)|PPoPP, 2021|
 |[Zero-offload: Democratizing billion-scale modeltraining](.)|USENIX, 2021|
