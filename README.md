@@ -30,7 +30,7 @@ Topics:
 |-------|-------------------|
 |[G10: Enabling An Efficient Unified GPU Memory and Storage Architecture with Smart Tensor Migrations](./docs/Efficient%20AI%20Algorithems/G10/G10.md)|MICRO, 2023|
 |[SELF-ATTENTION DOES NOT NEED $O(n^{2})$ MEMORY](./docs/Efficient%20AI%20Algorithems/efficient-attention-memory.md)|arXiv, 2021|
-|[Enable Simultaneous DNN Services Based on Deterministic Operator Overlap and Precise Latency Prediction](.)|SC, 2021|
+|[Enable Simultaneous DNN Services Based on Deterministic Operator Overlap and Precise Latency Prediction](./docs/Efficient%20AI%20Algorithems/Abacus/Abacus.md)|SC, 2021|
 
 ## Memory Management
 | Paper | Conference & Year |
