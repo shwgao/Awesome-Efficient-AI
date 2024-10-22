@@ -9,7 +9,6 @@ Topics:
 - [Memory Management](#memory-management)
 
 ## AI Compilers
-
 | Paper | Conference & Year |
 |-------|-------------------|
 |[TVM: An Automated End-to-End Optimizing Compiler for Deep Learning](./docs/AI%20Compilers/TVM/TVM.md)| OSDI, 2018 |
