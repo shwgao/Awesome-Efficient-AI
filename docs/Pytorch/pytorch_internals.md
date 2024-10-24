@@ -1,6 +1,18 @@
-## [Pytorch Internals](http://blog.ezyang.com/2019/05/pytorch-internals)
-- Tensor concepts
-- Autograd
+# Pytorch
+
+Content:
+- [1. Pytorch Internals](#pytorch-internals)
+    - [Tensor](#tensor)
+    - [Autograd](#autograd)
+    - [Pytorch Source Code](#pytorch-source-code)
+    - [Write a new kernel](#write-a-new-kernel)
+- [2. torch.fx](#trochfx)
+- [3. Pass]()
+
+
+## [1. Pytorch Internals](http://blog.ezyang.com/2019/05/pytorch-internals)
+- [Tensor concepts](#tensor)
+- [Autograd]
 
 
 ### Tensor
@@ -61,3 +73,8 @@ Steps:
 - computation.
 
 ![alt text](image-7.png)
+
+## 2. Troch.fx
+
+- [github readme](https://github.com/pytorch/pytorch/blob/main/torch/fx/README.md)
+- [pytorch doc](https://pytorch.org/docs/stable/fx.html)

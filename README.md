@@ -63,3 +63,9 @@ Topics:
 |[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
 |[Efficient Memory Management for Deep Neural Net Inference](.)| arXiv, 2020|
 |[Gpipe: Efficient training of giant neural networks using pipeline parallelism](.)|NeurIPS, 2019|
+
+## Parallelism
+| Paper | Conference & Year |
+|-------|-------------------|
+|[Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](./docs/Parallism/Alpa/Alpa.md)|OSDI, 2022|
+|[GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](./docs/Parallism/GPipe/Gpipe.md)|NeurIPS, 2019|
