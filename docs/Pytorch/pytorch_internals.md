@@ -78,3 +78,6 @@ Steps:
 
 - [github readme](https://github.com/pytorch/pytorch/blob/main/torch/fx/README.md)
 - [pytorch doc](https://pytorch.org/docs/stable/fx.html)
+
+## Other useful links
+- [Pytorch internals](https://www.kaggle.com/discussions/questions-and-answers/150725)
