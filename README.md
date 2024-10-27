@@ -29,6 +29,8 @@ Topics:
 | Paper | Conference & Year |
 |-------|-------------------|
 |[G10: Enabling An Efficient Unified GPU Memory and Storage Architecture with Smart Tensor Migrations](./docs/Efficient%20AI%20Algorithems/G10/G10.md)|MICRO, 2023|
+|[FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning]()| arXiv, 2023|
+|[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]()| NeurIPS, 2022|
 |[SELF-ATTENTION DOES NOT NEED $O(n^{2})$ MEMORY](./docs/Efficient%20AI%20Algorithems/efficient-attention-memory.md)|arXiv, 2021|
 |[Enable Simultaneous DNN Services Based on Deterministic Operator Overlap and Precise Latency Prediction](./docs/Efficient%20AI%20Algorithems/Abacus/Abacus.md)|SC, 2021|
 
