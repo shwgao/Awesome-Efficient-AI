@@ -7,6 +7,7 @@ Topics:
 - [NNFusion](#nnfusion)
 - [Efficient AI Algorithms](#efficient-ai-algorithms)
 - [Memory Management](#memory-management)
+- [Some other topics](#some-other-topics)
 
 ## AI Compilers
 | Paper | Conference & Year |
@@ -71,3 +72,9 @@ Topics:
 |-------|-------------------|
 |[Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](./docs/Parallism/Alpa/Alpa.md)|OSDI, 2022|
 |[GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](./docs/Parallism/GPipe/Gpipe.md)|NeurIPS, 2019|
+
+## Some other topics
+| Notes | References |
+|-------|-------------------|
+|Pytorch Internals|[notes](./docs/Some%20other%20topics/Pytorch/pytorch_internals.md)|
+|Performance optimization for deep learning|[tutorial/slides](https://docs.google.com/presentation/d/1vikeOOHF2ig15af2qQxtUG3KRDu9T973/edit#slide=id.p2)|
