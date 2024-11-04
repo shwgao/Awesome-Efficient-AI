@@ -61,7 +61,7 @@ Topics:
 |[Efficient Memory Management for Large Language Model Serving with PagedAttention](.)|SOSP, 2023|
 |[MegTaiChi: Dynamic Tensor-based Memory Management Optimization for DNN Training](.)|ICS, 2022|
 |[Dapple:A pipelined data parallel approach for training large models.](.)|PPoPP, 2021|
-|[Zero-offload: Democratizing billion-scale modeltraining](.)|USENIX, 2021|
+|[Zero-offload: Democratizing billion-scale modeltraining](./docs/Memory%20Management/Zero-offload/zero-offload.md)|USENIX, 2021|
 |[Memory-efficient pipeline-parallel dnn training](.)|PMLR, 2021|
 |[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
 |[Efficient Memory Management for Deep Neural Net Inference](.)| arXiv, 2020|
