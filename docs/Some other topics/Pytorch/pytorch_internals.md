@@ -8,6 +8,7 @@ Content:
     - [Write a new kernel](#write-a-new-kernel)
 - [2. torch.fx](#trochfx)
 - [3. Pass]()
+- [4. Memory Management](#memory-management)
 
 
 ## [1. Pytorch Internals](http://blog.ezyang.com/2019/05/pytorch-internals)
@@ -79,5 +80,14 @@ Steps:
 - [github readme](https://github.com/pytorch/pytorch/blob/main/torch/fx/README.md)
 - [pytorch doc](https://pytorch.org/docs/stable/fx.html)
 
-## Other useful links
+## 3. Other useful links
 - [Pytorch internals](https://www.kaggle.com/discussions/questions-and-answers/150725)
+
+## 4. Memory Management
+
+### CPU offloading:
+```
+torch.autograd.graph.saved_tensors_hooks 
+torch.autograd.graph.save_on_cpu
+```
+[blog](https://discuss.pytorch.org/t/modifying-forward-backward-pass/169687)

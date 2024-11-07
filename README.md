@@ -67,6 +67,7 @@ Topics:
 ## Memory Management
 | Paper | Conference & Year |
 |-------|-------------------|
+|[MAGIS: Memory Optimization via Coordinated Graph Transformation and Scheduling for DNN](.)|ASPLOS, 2024
 |[ROAM: memory-efficient large DNN training via optimized operator ordering and memory layout](.)|arXiv, 2023|
 |[MODeL: Memory Optimizations for Deep Learning](./docs/Memory%20Management/Peak%20Memory%20Minimization/MODel.md)|ICML, 2023|
 |[Efficient Memory Management for Large Language Model Serving with PagedAttention](.)|SOSP, 2023|
@@ -83,6 +84,7 @@ Topics:
 ## Parallelism and Pipeline 
 | Paper | Conference & Year |
 |-------|-------------------|
+|[H3T: Efficient Integration of Memory Optimization and Parallelism for High-Throughput Transformer Training](.)|NeurIPS, 2024|
 |[Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](./docs/Parallism/Alpa/Alpa.md)|OSDI, 2022|
 |[Dapple:A pipelined data parallel approach for training large models.](.)|PPoPP, 2021|
 |[Memory-efficient pipeline-parallel dnn training](.)|PMLR, 2021|
