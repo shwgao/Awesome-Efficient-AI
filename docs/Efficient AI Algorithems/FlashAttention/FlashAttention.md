@@ -11,9 +11,7 @@
 - FlashAttention: An IO-aware attention algorithm that uses tiling to reduce the number of memory reads/writs between
 GPU HBM and GPU SRAM.
 
-
 ![alt text](image.png)
-
 
 1. Main goal: Main goal is to avoid reading and writing the attention matrix to and from HBM.
     - Implementation challenges:
