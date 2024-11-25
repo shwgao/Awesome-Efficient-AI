@@ -75,6 +75,9 @@ Topics:
 |[MegTaiChi: Dynamic Tensor-based Memory Management Optimization for DNN Training](.)|ICS, 2022|
 |[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
 |[Efficient Memory Management for Deep Neural Net Inference](.)| arXiv, 2020|
+|[A scalable concurrent malloc(3) implementation for freebsd.](.)| ..., 2006|
+|[Tcmalloc: Thread-caching malloc.](.)| ..., 2005|
+|[Hoard: A scalable memory allocator for multithreaded applications.](.)| ASPLOS, 2000|
 
 ## LLM Training and Inference
 | Paper | Conference & Year |
