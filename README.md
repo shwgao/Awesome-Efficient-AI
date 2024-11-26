@@ -97,5 +97,6 @@ Topics:
 ## Some other topics
 | Notes | References |
 |-------|-------------------|
+|[CMU Machine Learning System](https://www.cs.cmu.edu/~zhihaoj2/15-849/schedule.html)| CMU, 2023|
 |Pytorch Internals|[notes](./docs/Some%20other%20topics/Pytorch/pytorch_internals.md)|
 |Performance optimization for deep learning|[tutorial/slides](https://docs.google.com/presentation/d/1vikeOOHF2ig15af2qQxtUG3KRDu9T973/edit#slide=id.p2)|
