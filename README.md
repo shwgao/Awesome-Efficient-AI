@@ -6,7 +6,7 @@ Topics:
 - [CUDA](#cuda)
 - [NNFusion](#nnfusion)
 - [Efficient AI Algorithms](#efficient-ai-algorithms)
-- [Break the "memory wall"](#existing-methods-to-break-the-memory-wall-in-ai-training)
+- [Break the "Memory Wall"](#existing-methods-to-break-the-memory-wall-in-ai-training)
     - [Offloading](#distributed-training-or-inference)
     - [Memory Management](#memory-management)
     - [LLM Training and Inference](#llm-training-and-inference)
