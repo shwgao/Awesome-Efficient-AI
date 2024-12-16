@@ -2,7 +2,7 @@
 
 
 ## FlashAttention-1: Fast and Memory-Efficient Exact Attention with IO-Awareness ([GitHub](https://github.com/Dao-AILab/flash-attention?tab=readme-ov-file)).
-[Slides](./flash-attention-slides.pdf) from the presentation of the paper in ICML 2022.
+[Slides](./Reading-Group-Flashattention.pdf) from the presentation of the paper in ICML 2022.
 
 ### Introduction:
 - Problem definition: Transformers are memory-hungry on long sequences.
