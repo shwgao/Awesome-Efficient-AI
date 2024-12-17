@@ -1,3 +1,15 @@
+## Some terms of GPU
+
+# TODO
+- **GPU Utilization**: 
+- **Architecture**: 
+  - **Turing**: 
+  - **Ampere**: 
+  - **Hopper**: 
+- **Computation**: 
+  - **FP32**:
+  - **TF32**:
+
 ## [CUDA graphs](https://developer.nvidia.com/blog/cuda-graphs/)
 > There are overheads associated with the submission of each operation to the GPU – also at the microsecond scale – which are now becoming significant in an increasing number of cases. 
 
@@ -21,3 +33,8 @@ The default cuBLAS workspace size for sm<90 uses **8.125MB** and is initialized:
 
 - PyTorch uses a *caching memory allocator* to speed up memory allocations. This allows fast memory deallocation without device synchronizations.
 -
+
+
+## References
+
+- https://arthurchiao.art/blog/gpu-data-sheets/
