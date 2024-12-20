@@ -6,9 +6,11 @@
   - **Turing**: 
   - **Ampere**: 
   - **Hopper**: 
+  - **Tensor cores**: That are useful for accelerating matrix multiplication operations.
 - **Computation**: 
   - **FP32**:
   - **TF32**:
+- **Arithmetic intensity**: Also know as computational intensity, is the ratio of the number of arithmetic operations to the number of data movements.
 
 ## [CUDA graphs](https://developer.nvidia.com/blog/cuda-graphs/)
 > There are overheads associated with the submission of each operation to the GPU – also at the microsecond scale – which are now becoming significant in an increasing number of cases. 
