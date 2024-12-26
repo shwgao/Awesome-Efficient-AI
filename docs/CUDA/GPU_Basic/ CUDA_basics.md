@@ -12,9 +12,53 @@
   - **FP32**:
   - **TF32**:
 - **Arithmetic intensity**: Also know as computational intensity, is the ratio of the number of arithmetic operations to the number of data movements.
-- **Memory type**: 
-  - **Global Memory**, **Shared Memory**, **L1 Cache**, **L2 Cache**, **L3 Cache**, **Register**
-![alt text](image-1.png)
+
+- **Thread**: 
+  - GPU threads take very few clock cycles to generate and schedule, while CPU threads take thousands of clock cycles.
+- **Block**: 
+  - Blockdim: <<<x, y, z>>>, The choice of dimensionality for organizing threads usually reflects the dimensionality of the data. For example, if the data is a vector has 1 dimension, then the blockdim is better to be <<<x, 1, 1>>>. In general, it is recommended that the number of threads in each dimension of a thread block be a multiple of 32 for hardware efficiency reasons.
+- **Grid**: 
+  - All threads in a grid execute the same kernel function.
+
+### GPU Memory Hierarchy
+<div style="display: flex; gap: 10px;">
+    <img src="image-1.png" alt="CUDA architecture diagram" style="max-width: 45%;">
+    <img src="image-3.png" alt="CUDA thread hierarchy" style="max-width: 45%;">
+</div>
+
+
+1. **Registers**
+   - Private to each thread
+   - Not visible to other threads
+   - Allocation managed by compiler
+
+2. **L1/Shared Memory (SMEM)**
+   - Fast, on-chip scratchpad memory
+   - Can be used as L1 cache and shared memory
+   - Shared by:
+     - All threads within a CUDA block
+     - All CUDA blocks running on the same SM
+
+3. **Read-only Memory**
+   - Each SM contains:
+     - Instruction cache
+     - Constant memory
+     - Texture memory
+     - RO cache
+   - Read-only access from kernel code
+
+4. **L2 Cache**
+   - Shared across all SMs
+   - Accessible by all threads in all CUDA blocks
+   - Size comparison:
+     - A100 GPU: 40 MB
+     - V100 GPU: 6 MB
+
+5. **Global Memory**
+   - GPU's main DRAM
+   - Also known as framebuffer
+   - Largest but slowest memory type
+
 ## [CUDA graphs](https://developer.nvidia.com/blog/cuda-graphs/)
 > There are overheads associated with the submission of each operation to the GPU – also at the microsecond scale – which are now becoming significant in an increasing number of cases. 
 
