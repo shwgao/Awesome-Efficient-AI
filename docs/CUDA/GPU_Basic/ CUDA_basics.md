@@ -19,6 +19,10 @@
   - Blockdim: <<<x, y, z>>>, The choice of dimensionality for organizing threads usually reflects the dimensionality of the data. For example, if the data is a vector has 1 dimension, then the blockdim is better to be <<<x, 1, 1>>>. In general, it is recommended that the number of threads in each dimension of a thread block be a multiple of 32 for hardware efficiency reasons.
 - **Grid**: 
   - All threads in a grid execute the same kernel function.
+- **Warp**: 
+  - In most implementations to date, once a block has been assigned to an SM, it is further divided into 32-thread units called warps.
+  - Control divergence: When threads within a warp take different control flow paths, the SIMD hardware will take multiple passes through these paths, one pass for each path. During each pass, the threads that follow the other path are not allowed to take effect.
+
 
 ### GPU Memory Hierarchy
 <div style="display: flex; gap: 10px;">
