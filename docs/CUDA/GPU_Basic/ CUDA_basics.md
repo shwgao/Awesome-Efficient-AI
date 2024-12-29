@@ -7,7 +7,10 @@
   - **Ampere**: 
   - **Hopper**: 
   - **Tensor cores**: That are useful for accelerating matrix multiplication operations.
-  ![alt text](image-2.png)
+    >They operate on 4×4 matrices and can perform the following matrix multiplication and accumulation extremely efficiently.
+    >$D = A \times B + C$ (2)
+    >where A and B are matrices in FP16, and C and D are matrices in either FP16 or FP32. V100 has 80 SMs and 8 tensor cores per SM, and at 1.312 GHz clock frequency, its theoretical Tensor Core peak can be calculated as
+    >$80 \times 8 \times 1.312 \times 4^3 \times 2 = 107.479$ TFLOP/s (3)
 - **Computation**: 
   - **FP32**:
   - **TF32**:
@@ -15,6 +18,8 @@
 
 - **Thread**: 
   - GPU threads take very few clock cycles to generate and schedule, while CPU threads take thousands of clock cycles.
+  - Threads, Context-switching, and Zero-overhead Scheduling:
+    >GPU SMs achieves zero-overhead scheduling by holding all the execution states for the assigned warps in the hardware registers so there is no need to save and restore states when switching from one warp to another.
 - **Block**: 
   - Blockdim: <<<x, y, z>>>, The choice of dimensionality for organizing threads usually reflects the dimensionality of the data. For example, if the data is a vector has 1 dimension, then the blockdim is better to be <<<x, 1, 1>>>. In general, it is recommended that the number of threads in each dimension of a thread block be a multiple of 32 for hardware efficiency reasons.
 - **Grid**: 
@@ -22,12 +27,13 @@
 - **Warp**: 
   - In most implementations to date, once a block has been assigned to an SM, it is further divided into 32-thread units called warps.
   - Control divergence: When threads within a warp take different control flow paths, the SIMD hardware will take multiple passes through these paths, one pass for each path. During each pass, the threads that follow the other path are not allowed to take effect.
-
+  - Latency tolerance/hiding:
+    >That is, each SM has only enough execution units to execute a subset of all the threads assigned to it at any point in time. In earlier GPU designs, each SM can execute only one instruction for a single warp at any given instant. In more recent designs, each SM can execute instructions for a small number of warps at any given point in time. In either case, the hardware can execute instructions only for a subset of all warps in the SM. A legitimate question is why we need to have so many warps assigned to an SM if it can execute only a subset of them at any instant? The answer is that this is how GPUs tolerate long-latency operations such as global memory accesses. When an instruction to be executed by a warp needs to wait for the result of a previously initiated long-latency operation, the warp is not selected for execution. Instead, another resident warp that is no longer waiting for results of previous instructions will be selected for execution. If more than one warp is ready for execution, a priority mechanism is used to select one for execution. This mechanism of filling the latency time of operations from some threads with work from other threads is often called “latency tolerance” or “latency hiding” (see the “Latency Tolerance” sidebar).
 
 ### GPU Memory Hierarchy
 <div style="display: flex; gap: 10px;">
-    <img src="image-1.png" alt="CUDA architecture diagram" style="max-width: 45%;">
-    <img src="image-3.png" alt="CUDA thread hierarchy" style="max-width: 45%;">
+    <img src="image-1.png" alt="CUDA architecture diagram" style="max-width: 25%;">
+    <img src="image-3.png" alt="CUDA thread hierarchy" style="max-width: 25%;">
 </div>
 
 
@@ -87,6 +93,11 @@ The default cuBLAS workspace size for sm<90 uses **8.125MB** and is initialized:
 - PyTorch uses a *caching memory allocator* to speed up memory allocations. This allows fast memory deallocation without device synchronizations.
 -
 
+## profiling tools
+- Nsight Compute and Nsight Systems
+  - https://docs.alcf.anl.gov/polaris/performance-tools/NVIDIA-Nsight/#nsight-compute
+  - https://dev-discuss.pytorch.org/t/using-nsight-systems-to-profile-gpu-workload/59
+  - 
 
 ## References
 
