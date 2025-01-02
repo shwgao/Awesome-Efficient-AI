@@ -9,7 +9,7 @@
   - **Hopper**: 
   - **Tensor cores**: That are useful for accelerating matrix multiplication operations.
     >They operate on 4×4 matrices and can perform the following matrix multiplication and accumulation extremely efficiently.
-    >$D = A \times B + C$ (2)
+    >$D = A \times B + C$
     >where A and B are matrices in FP16, and C and D are matrices in either FP16 or FP32. V100 has 80 SMs and 8 tensor cores per SM, and at 1.312 GHz clock frequency, its theoretical Tensor Core peak can be calculated as
     >$80 \times 8 \times 1.312 \times 4^3 \times 2 = 107.479$ TFLOP/s (3)
 - **Computation**: 
