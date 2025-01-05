@@ -1,3 +1,27 @@
+# Table of Contents
+- [Some terms of GPU](#some-terms-of-gpu)
+  - [GPU Utilization](#gpu-utilization)
+  - [Architecture](#architecture)
+  - [Computation](#computation)
+  - [Arithmetic intensity](#arithmetic-intensity)
+  - [Thread](#thread)
+  - [Block](#block)
+  - [Grid](#grid)
+  - [Warp](#warp)
+  - [Occupancy](#occupancy)
+- [GPU Memory Hierarchy](#gpu-memory-hierarchy)
+  - [Registers](#registers)
+  - [L1/Shared Memory (SMEM)](#l1shared-memory-smem)
+  - [Read-only Memory](#read-only-memory)
+  - [L2 Cache](#l2-cache)
+  - [Global Memory](#global-memory)
+  - [Local Memory](#local-memory)
+- [CUDA graphs](#cuda-graphs)
+- [CUDA and Pytorch](#cuda-and-pytorch)
+- [Memory Management](#memory-management)
+- [Profiling tools](#profiling-tools)
+- [References](#references)
+
 ## Some terms of GPU
 
 
