@@ -60,8 +60,8 @@
 
 ### GPU Memory Hierarchy
 <div style="display: flex; gap: 10px;">
-    <img src="image-1.png" alt="CUDA architecture diagram" style="max-width: 25%;">
-    <img src="image-3.png" alt="CUDA thread hierarchy" style="max-width: 25%;">
+    <img src="image-1.png" alt="CUDA architecture diagram" style="max-width: 35%;">
+    <img src="image-3.png" alt="CUDA thread hierarchy" style="max-width: 35%;">
 </div>
 
 
@@ -93,14 +93,25 @@
      - V100 GPU: 6 MB
 
 5. **Global Memory**
-   - GPU's main DRAM
+   - GPU's main DRAM: DRAM systems typically employ two more forms of parallel organization: banks and channels. At the highest level, a processor contains one or more channels.
+
+   - <img src="image-5.png" alt="Memory Coalescing" style="max-width: 60%;">
+   
    - Also known as framebuffer
    - Largest but slowest memory type
+   - Double data rate (DDR) busses perform two data transfers per clock cycle: one at the rising edge and one at the falling edge of each clock cycle.
 
 6. **Local Memory**
    - Placed in global memory
    - Not shared across threads.
    - It places data that is private to the thread but cannot be allocated in registers. This data includes statically allocated arrays, spilled registers, and other elements of the thread’s call stack.
+
+## Performance Considerations
+
+1. **Memory Coalescing**: Memory coalescing is the process of combining multiple memory accesses into a single memory access. Background: row-major and column-major layour. Terms: corner-turn...\
+<img src="image-4.png" alt="Memory Coalescing" style="max-width: 60%;">
+
+
 
 ## [CUDA graphs](https://developer.nvidia.com/blog/cuda-graphs/)
 > There are overheads associated with the submission of each operation to the GPU – also at the microsecond scale – which are now becoming significant in an increasing number of cases. 
