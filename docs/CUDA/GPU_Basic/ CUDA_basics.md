@@ -16,6 +16,7 @@
   - [L2 Cache](#l2-cache)
   - [Global Memory](#global-memory)
   - [Local Memory](#local-memory)
+- [Multi-process Service(MPS)](#multi-process-service)
 - [CUDA graphs](#cuda-graphs)
 - [CUDA and Pytorch](#cuda-and-pytorch)
 - [Memory Management](#memory-management)
@@ -92,7 +93,7 @@
      - A100 GPU: 40 MB
      - V100 GPU: 6 MB
 
-5. **Global Memory**
+5. **Global Memory**: Global memory is a 49-bit virtual address space that is mapped to physical memory on the device, pinned system memory, or peer memory. Global memory is visible to all threads in the GPU. Global memory is accessed through the SM L1 and GPU L2.
    - GPU's main DRAM: DRAM systems typically employ two more forms of parallel organization: banks and channels. At the highest level, a processor contains one or more channels.
 
    - <img src="image-5.png" alt="Memory Coalescing" style="max-width: 60%;">
@@ -111,7 +112,18 @@
 1. **Memory Coalescing**: Memory coalescing is the process of combining multiple memory accesses into a single memory access. Background: row-major and column-major layour. Terms: corner-turn...\
 <img src="image-4.png" alt="Memory Coalescing" style="max-width: 60%;">
 
+2. **Hiding memory latency**: Memory Bank and Channel. double data rate (DDR). interleaved data distribution.
 
+2. **Threading Coarsening**: Assigning each thread multiple units of work.
+   
+## [Multi-process Service](https://www.hpcadmintech.com/wp-content/uploads/2016/03/Carlo_Nardone_presentation.pdf)
+- Background:
+  - Each process has a unique context.
+  - Only a single context can be active on a device at a time.
+  - Multiple processes (e.g. MPI) on a single GPU could not operate concurrently
+- MPS: Software layer that sits between the driver and your application.
+  - Routes all CUDA calls through a single context
+  - Multiple processes can execute concurrently
 
 ## [CUDA graphs](https://developer.nvidia.com/blog/cuda-graphs/)
 > There are overheads associated with the submission of each operation to the GPU – also at the microsecond scale – which are now becoming significant in an increasing number of cases. 
@@ -141,8 +153,9 @@ The default cuBLAS workspace size for sm<90 uses **8.125MB** and is initialized:
 - Nsight Compute and Nsight Systems
   - https://docs.alcf.anl.gov/polaris/performance-tools/NVIDIA-Nsight/#nsight-compute
   - https://dev-discuss.pytorch.org/t/using-nsight-systems-to-profile-gpu-workload/59
-  - 
-
+  - https://docs.google.com/presentation/d/1vikeOOHF2ig15af2qQxtUG3KRDu9T973/edit#slide=id.p6
+- Flops measurement:
+  - https://www.deepspeed.ai/tutorials/flops-profiler/
 ## References
 
 - https://arthurchiao.art/blog/gpu-data-sheets/
