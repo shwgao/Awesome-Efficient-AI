@@ -19,6 +19,7 @@ Topics:
 |[Welder: Scheduling Deep Learning Memory Access via Tile-graph](./docs/AI%20Compilers/Welder/welder.md)|OSDI, 2023 |
 |[TVM: An Automated End-to-End Optimizing Compiler for Deep Learning](./docs/AI%20Compilers/TVM/TVM.md)| OSDI, 2018 |
 |[Pytorch 2.0 compiler: torch.compile](https://pytorch.org/tutorials/intermediate/torch_compile_tutorial.html#id3)|          |
+|[MLIR](./docs/AI%20Compilers/MLIR/MLIR.md)|Arxiv, 2024|
 
 ## CUDA
 | Paper | Conference & Year |
@@ -97,6 +98,8 @@ Topics:
 ## Some other topics
 | Notes | References |
 |-------|-------------------|
-|[CMU Machine Learning System](https://www.cs.cmu.edu/~zhihaoj2/15-849/schedule.html)| CMU, 2023|
+|CMU Machine Learning System, CMU, 2023|[Course](https://www.cs.cmu.edu/~zhihaoj2/15-849/schedule.html)|
 |Pytorch Internals|[notes](./docs/Some%20other%20topics/Pytorch/pytorch_internals.md)|
 |Performance optimization for deep learning|[tutorial/slides](https://docs.google.com/presentation/d/1vikeOOHF2ig15af2qQxtUG3KRDu9T973/edit#slide=id.p2)|
+|Good reading materials about transformer|[Github Markdown](https://github.com/feuyeux/hello-ai/tree/7f29a2cb90f58e1c91dbefa4002fb9be090b9db1/background)|
+|CS267, Applications of Parallel Computers, UC Berkeley|[Course](https://sites.google.com/lbl.gov/cs267-spr2024)|
