@@ -89,6 +89,7 @@ Topics:
 ## Parallelism and Pipeline 
 | Paper | Conference & Year |
 |-------|-------------------|
+|[GraphPipe: Improving Performance and Scalability of DNN Training with Graph Pipeline Parallelism](./docs/Parallism/Graphpipe/graphpipe.md)|ASPLOS, 2025|
 |[H3T: Efficient Integration of Memory Optimization and Parallelism for High-Throughput Transformer Training](.)|NeurIPS, 2024|
 |[Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](./docs/Parallism/Alpa/Alpa.md)|OSDI, 2022|
 |[Dapple:A pipelined data parallel approach for training large models.](.)|PPoPP, 2021|
