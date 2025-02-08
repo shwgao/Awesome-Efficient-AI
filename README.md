@@ -72,7 +72,7 @@ Topics:
 |[MAGIS: Memory Optimization via Coordinated Graph Transformation and Scheduling for DNN](./docs/Memory%20Management/MAGIS/MAGIS.md)|ASPLOS, 2024
 |[ROAM: memory-efficient large DNN training via optimized operator ordering and memory layout](./docs/Memory%20Management/ROAM/ROAM.md)|arXiv, 2023|
 |[TelaMalloc: Efficient On-Chip Memory Allocation for Production Machine Learning Accelerators](./docs/Memory%20Management/TelaMalloc/TelaMalloc.md)|ASPLOS, 2023|
-|[MODeL: Memory Optimizations for Deep Learning](./docs/Memory%20Management/Peak%20Memory%20Minimization/MODel.md)|ICML, 2023|
+|[MODeL: Memory Optimizations for Deep Learning(vLLM)](./docs/Memory%20Management/Peak%20Memory%20Minimization/MODel.md)|ICML, 2023|
 |[Efficient Memory Management for Large Language Model Serving with PagedAttention](.)|SOSP, 2023|
 |[MegTaiChi: Dynamic Tensor-based Memory Management Optimization for DNN Training](.)|ICS, 2022|
 |[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
