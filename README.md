@@ -75,6 +75,7 @@ Topics:
 |[MODeL: Memory Optimizations for Deep Learning(vLLM)](./docs/Memory%20Management/Peak%20Memory%20Minimization/MODel.md)|ICML, 2023|
 |[Efficient Memory Management for Large Language Model Serving with PagedAttention](.)|SOSP, 2023|
 |[MegTaiChi: Dynamic Tensor-based Memory Management Optimization for DNN Training](.)|ICS, 2022|
+|[Dynamic Tensor Rematerialization](./docs/Memory%20Management/DTR/DTR.md)|ICLR, 2021|
 |[Zero:Memory optimizations toward training trillion parameter models.](.)|SC20, 2020|
 |[Efficient Memory Management for Deep Neural Net Inference](.)| arXiv, 2020|
 |[A scalable concurrent malloc(3) implementation for freebsd.](.)| ..., 2006|
