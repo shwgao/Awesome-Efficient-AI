@@ -13,6 +13,13 @@ Topics:
 - [Parallelism and Pipeline](#parallelism-and-pipeline)
 - [Some other topics](#some-other-topics)
 
+## LLM Serving
+| Paper | Conference & Year |
+|-------|-------------------|
+|[SGLang](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| , |
+|[vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention](./docs/LLM%20serving/vllm/vllm.md)|SOSP, 2023|
+
+
 ## AI Compilers
 | Paper | Conference & Year |
 |-------|-------------------|
