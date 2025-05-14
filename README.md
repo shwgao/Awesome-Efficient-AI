@@ -6,18 +6,14 @@ Topics:
 - [CUDA](#cuda)
 - [NNFusion](#nnfusion)
 - [Efficient AI Algorithms](#efficient-ai-algorithms)
-- [Break the "Memory Wall"](#existing-methods-to-break-the-memory-wall-in-ai-training)
-    - [Offloading](#distributed-training-or-inference)
-    - [Memory Management](#memory-management)
-    - [LLM Training and Inference](#llm-training-and-inference)
+- [Break the "Memory Wall"](./docs/Memory%20Management/Break_memory_wall.md)
+- [Offloading](#offloading)
+- [Memory Management](#memory-management)
 - [Parallelism and Pipeline](#parallelism-and-pipeline)
+- [LLM Training and Inference](#llm-training-and-inference)
+- [LLM Inference Scaling Laws](#llm-inference-scaling-laws)
+- [LLM Serving](#llm-serving)
 - [Some other topics](#some-other-topics)
-
-## LLM Serving
-| Paper | Conference & Year |
-|-------|-------------------|
-|[SGLang](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| , |
-|[vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention](./docs/LLM%20serving/vllm/vllm.md)|SOSP, 2023|
 
 
 ## AI Compilers
@@ -33,6 +29,7 @@ Topics:
 |-------|-------------------|
 |[CUDA basic knowledge](./docs/CUDA/CUDA_basic_knowledge/%20CUDA_basics.md)||
 |[Mirage: A Multi-Level Superoptimizer for Tensor Programs <br>(Generating Fast GPU Kernels without Programming in CUDA/Triton)](./docs/CUDA/Mirage/Mirage.md)|Arxiv, 2024|
+|[Accurate and Convenient Energy Measurements for GPUs: A Detailed Study of NVIDIA GPU’s Built-In Power Sensor](./docs/CUDA/GPU_Power.md)|SC24, 2024|
 
 ## NNFusion
 | Paper | Conference & Year |
@@ -54,24 +51,7 @@ Topics:
 |[Zero-offload: Democratizing billion-scale modeltraining](./docs/Memory%20Management/Zero-offload/zero-offload.md)|USENIX, 2021|
 
 
-### Existing methods to break the "memory wall" in AI training.
-1. [Offloading](#offloading): 
-    - Data parallelism: Each worker holds a copy of the model and a subset of the data.
-    - Model parallelism: Each worker holds a subset of the model.
-2. Novel network architectures reduce the number of parameters.
-    - Neural architecture search (NAS) and AutoML.
-3. Model compression:
-    - Quantization.
-    - Pruning.
-    - Distillation.
-4. Training with reduced precision.
-5. In-memory tensor compression.
-6. Rematerialization: Recompute intermediate tensors instead of storing them.
-7. Paging, swapping, and spilling to other memory pool.
-8. [Memory Management](#memory-management)
-9. Other methods may be benificial for memory management in AI training:
-    - Operator fusion.
-    - Compiler optimizations.
+
 
 ## Memory Management
 | Paper | Conference & Year |
@@ -89,11 +69,6 @@ Topics:
 |[Tcmalloc: Thread-caching malloc.](.)| ..., 2005|
 |[Hoard: A scalable memory allocator for multithreaded applications.](.)| ASPLOS, 2000|
 
-## LLM Training and Inference
-| Paper | Conference & Year |
-|-------|-------------------|
-|[FlexLLMGen: High-throughput Generative Inference of Large Language Models with a Single GPU](.)|ICML, 2023|
-|[DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale](.)|SC, 2022|
 
 ## Parallelism and Pipeline 
 | Paper | Conference & Year |
@@ -105,6 +80,24 @@ Topics:
 |[Memory-efficient pipeline-parallel dnn training](.)|PMLR, 2021|
 |[GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](./docs/Parallism/GPipe/Gpipe.md)|NeurIPS, 2019|
 
+## LLM Training and Inference
+| Paper | Conference & Year |
+|-------|-------------------|
+|[FlexLLMGen: High-throughput Generative Inference of Large Language Models with a Single GPU](.)|ICML, 2023|
+|[DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale](.)|SC22, 2022|
+
+## LLM Inference Scaling Laws
+| Paper | Conference & Year |
+|-------|-------------------|
+|[Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving](.)|ICLR, 2025|
+|[s1: Simple test-time scaling](https://aipapersacademy.com/s1/)|ICLR, 2025|
+
+## LLM Serving
+| Paper | Conference & Year |
+|-------|-------------------|
+|[SGLang](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| , |
+|[vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention](./docs/LLM%20serving/vllm/vllm.md)|SOSP, 2023|
+
 ## Some other topics
 | Notes | References |
 |-------|-------------------|
@@ -113,3 +106,5 @@ Topics:
 |Performance optimization for deep learning|[tutorial/slides](https://docs.google.com/presentation/d/1vikeOOHF2ig15af2qQxtUG3KRDu9T973/edit#slide=id.p2)|
 |Good reading materials about transformer|[Github Markdown](https://github.com/feuyeux/hello-ai/tree/7f29a2cb90f58e1c91dbefa4002fb9be090b9db1/background)|
 |CS267, Applications of Parallel Computers, UC Berkeley|[Course](https://sites.google.com/lbl.gov/cs267-spr2024)|
+
+
