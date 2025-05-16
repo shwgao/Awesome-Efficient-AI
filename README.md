@@ -96,6 +96,9 @@ Topics:
 | Paper | Conference & Year |
 |-------|-------------------|
 |[SGLang](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| , |
+|[FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving](.)|MLSys, 2025|
+|[vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention](.)|ASPLOS, 2025|
+|[SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification](.)|ASPLOS, 2024|
 |[vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention](./docs/LLM%20serving/vllm/vllm.md)|SOSP, 2023|
 
 ## Some other topics
