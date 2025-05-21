@@ -95,10 +95,11 @@ Topics:
 ## LLM Serving
 | Paper | Conference & Year |
 |-------|-------------------|
-|[SGLang](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| , |
+|[HybridFlow: A Flexible and Efficient RLHF Framework](https://verl.readthedocs.io/en/latest/index.html)[ (slides)](./docs/LLM%20serving/HybridFlow/HybridFlow.pptx)| EuroSys, 2025|
 |[FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving](.)|MLSys, 2025|
 |[vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention](.)|ASPLOS, 2025|
 |[SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification](.)|ASPLOS, 2024|
+|[SGLang: Efficient execution of structured language model programs](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| NeurIPS, 2024|
 |[vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention](./docs/LLM%20serving/vllm/vllm.md)|SOSP, 2023|
 
 ## Some other topics
