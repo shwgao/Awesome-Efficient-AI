@@ -110,5 +110,6 @@ Topics:
 |Performance optimization for deep learning|[tutorial/slides](https://docs.google.com/presentation/d/1vikeOOHF2ig15af2qQxtUG3KRDu9T973/edit#slide=id.p2)|
 |Good reading materials about transformer|[Github Markdown](https://github.com/feuyeux/hello-ai/tree/7f29a2cb90f58e1c91dbefa4002fb9be090b9db1/background)|
 |CS267, Applications of Parallel Computers, UC Berkeley|[Course](https://sites.google.com/lbl.gov/cs267-spr2024)|
+|Verl learning notes|[Verl](./docs/Some%20other%20topics/verl.md)|
 
 
