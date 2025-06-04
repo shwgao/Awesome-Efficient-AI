@@ -13,10 +13,6 @@ verl represents RLHF as a dataflow graph. Take the PPO algorithm as an example, 
 
 - **Online** emphasis is on whether the current strategy model can *interact with the environment* (for example, when encountering a new batch of mathematical problems, whether it can receive real-time feedback on correctness after completion). In some other scenarios (such as GUI agents, autonomous driving), online interaction necessitates the construction of a complex simulator.
 
-### Off-policy and offline
-- **Off-policy**: the policy is updated based on the samples collected from the previous policy.
-- **Offline**: emphasis is on whether the current strategy model can interact with the environment (for example, when encountering a new batch of mathematical problems, whether it can receive real-time feedback on correctness after completion). In some other scenarios (such as GUI agents, autonomous driving), online interaction necessitates the construction of a complex simulator.
-
 
 ## PPO RLHF Algorithm
 
