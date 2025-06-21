@@ -112,5 +112,5 @@ Topics:
 |Good reading materials about transformer|[Github Markdown](https://github.com/feuyeux/hello-ai/tree/7f29a2cb90f58e1c91dbefa4002fb9be090b9db1/background)|
 |CS267, Applications of Parallel Computers, UC Berkeley|[Course](https://sites.google.com/lbl.gov/cs267-spr2024)|
 |Verl learning notes|[Verl](./docs/Some%20other%20topics/verl.md)|
-
+|Git learning notes|[Git](./docs/Some%20other%20topics/Git/remove_files.md)|
 

@@ -69,6 +69,41 @@ If you are interested in the **attention** backend, you should read: `vllm/atten
     - Difficult to implement in practice:
         - request padding to avoid deadlock.
 
+
+### PD disaggregation
+- P: prefill, D: decode
+- Why PD disaggregation?
+    prefill will stop other request's decode
+
+- Key challenge in PD:
+    - How to transfer KV cache:
+        - 2 modes: pooling mode, p2p mode
+        - LMCache, MoonCake, MIXL
+    - How to extract (and inject) KV cache from (to) vLLM?
+        - connector API
+        - called in model_runner.py
+            - before forward: try receive KV cache (inject KV cache into vLLM's paged memory)
+            - after forward: extract KV cache from vLLM's paged memory and send it to outside.
+        - When to send the request to P and D node?
+            - first P then D
+            - first D then P
+
+
+### Speculative decoding
+- LLM inference is GPU-memory bound. So we need to find a way to increase amount of computation but does not significantly increase the amount of GPU memory access.
+
+- Solution: Generate token --> Guess multiple tokens and verify
+    - In terms of token generation per iteration
+        - Guess 3 tokens, acceptence rate: 2/3, if 2 tokens of guessing is correct, LLM inference will generate a new token --> 3 tokens.
+    - Iteration time
+        - Computation: (1 + 3)x
+        - Memory:
+            - w/o spec: Model parameters (8x2 GB) + KV caches (n * 100 KB)
+            - w/ spec: Model parameters (8x2 GB) + KV caches ((n+3) * 100 KB)
+        - Iteration time almost unchanged.
+    
+
+
 ## HaHa moment:
 - *A process* is a running program with its own isolated memory space and resources. 
 - *A thread* is a lighter-weight unit of execution within a process, sharing its parent process's memory and resources. 
