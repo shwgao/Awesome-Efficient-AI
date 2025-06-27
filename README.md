@@ -95,6 +95,7 @@ Topics:
 ## LLM Serving
 | Paper | Conference & Year |
 |-------|-------------------|
+|[AREAL: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning](./docs/LLM%20serving/AREAL/AReaL.pdf)|Arxiv, 2025|
 |[CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](./docs/LLM%20serving/CacheBlend/CacheBlend_slides.pdf)|EuroSys, 2025|
 |[HybridFlow: A Flexible and Efficient RLHF Framework](https://verl.readthedocs.io/en/latest/index.html)[ (slides)](./docs/LLM%20serving/HybridFlow/HybridFlow.pptx)| EuroSys, 2025|
 |[FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving](.)|MLSys, 2025|
