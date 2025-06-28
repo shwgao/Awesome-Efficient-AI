@@ -104,6 +104,13 @@ Topics:
 |[SGLang: Efficient execution of structured language model programs](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| NeurIPS, 2024|
 |[vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention](./docs/LLM%20serving/vllm/vllm.md)|SOSP, 2023|
 
+### Long context LLM
+| Paper | Conference & Year |
+|-------|-------------------|
+|[LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism]|SOSP, 2024|
+
+
+
 ## Some other topics
 | Notes | References |
 |-------|-------------------|
