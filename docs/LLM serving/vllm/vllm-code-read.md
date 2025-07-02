@@ -108,4 +108,18 @@ If you are interested in the **attention** backend, you should read: `vllm/atten
 - *A process* is a running program with its own isolated memory space and resources. 
 - *A thread* is a lighter-weight unit of execution within a process, sharing its parent process's memory and resources. 
 
+
+### How vllm compute the maximum number of tokens can be stored in the KV cache?
+vLLM computes the maximum number of tokens that can be stored in the KV cache based on available GPU memory after loading model weights and reserving space for activations. It divides the remaining memory by the per-token KV cache size (which depends on model architecture, number of layers, heads, head size, and dtype), then allocates as many blocks as fit, each block holding a fixed number of tokens (block_size). The total tokens = num_blocks × block_size. A step-by-step breakdown:
+1. Profile Memory Usage: vLLM loads the model weights and runs a dummy forward pass to profile the peak memory usage for activations and other non-KV-cache allocations (gpu_worker.py).
+
+2. Calculate Available Memory: It subtracts the memory used for model weights and activations from the total GPU memory, then applies the gpu_memory_utilization factor to determine the memory available for the KV cache (kv_cache_utils.py).
+
+3. Determine Per-Block and Per-Token Size: The per-token KV cache size is determined by model parameters (layers, heads, head size, dtype). Each block holds a fixed number of tokens (block_size), and the per-block size is calculated accordingly.
+
+4. Compute Number of Blocks: The available KV cache memory is divided by the per-block size to get the number of blocks that can be allocated.
+
+5. Compute Maximum Tokens: The total number of tokens that can be stored in the KV cache is num_blocks * block_size.
+
+
 ###
