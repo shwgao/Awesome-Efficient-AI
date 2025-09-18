@@ -95,10 +95,11 @@ Topics:
 ## LLM Serving
 | Paper | Conference & Year |
 |-------|-------------------|
+|[Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving](https://docs.google.com/presentation/d/1Ll8Jso-Ct37kUp-uUHxbhUr6i1kSMZ_gIqlQb_Fardk/edit?usp=sharing)|Arxiv, 2025|
 |[AREAL: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning](./docs/LLM%20serving/AREAL/AReaL.pdf)|Arxiv, 2025|
 |[CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](./docs/LLM%20serving/CacheBlend/CacheBlend_slides.pdf)|EuroSys, 2025|
 |[HybridFlow: A Flexible and Efficient RLHF Framework](https://verl.readthedocs.io/en/latest/index.html)[ (slides)](./docs/LLM%20serving/HybridFlow/HybridFlow.pptx)| EuroSys, 2025|
-|[FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving](.)|MLSys, 2025|
+|[FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving](https://docs.google.com/presentation/d/1zULik9ILP3eMnRmb-5crp7vI9ei9s5vivF9EJbJWX5A/edit?usp=sharing)|MLSys, 2025|
 |[vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention](.)|ASPLOS, 2025|
 |[SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification](.)|ASPLOS, 2024|
 |[SGLang: Efficient execution of structured language model programs](https://lmsys.org/blog/2024-07-25-sglang-llama3/)| NeurIPS, 2024|
@@ -107,8 +108,12 @@ Topics:
 ### Long context LLM
 | Paper | Conference & Year |
 |-------|-------------------|
-|[LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism](.)|SOSP, 2024|
+|[LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism](https://docs.google.com/presentation/d/10XiPQK5zh72q9mGyNsxMXsDMqVAkNXGqgpb2tT2k0KE/edit?usp=sharing)|SOSP, 2024|
 
+### MoE
+| Paper | Conference & Year |
+|-------|-------------------|
+|[X-MoE_Enabling Scalable Training for Emerging Mixture-of-Experts Architectures on HPC Platforms](https://docs.google.com/presentation/d/1mp1uPbkaNi_Ycs5LxptAS0l5718XaE4wcCuWsJ6ExVg/edit?usp=sharing)|SC, 2025|
 
 
 ## Some other topics
